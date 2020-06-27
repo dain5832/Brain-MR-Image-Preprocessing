@@ -3,11 +3,17 @@
 ### Dcm to Nii
 convert dcm files to nifti
 
+
+
 ### file_manipulation
 manipulate file using pandsa and os module(move, copy, remove)
 
+
+
 ### get_axial_slice_from_sagittal
 Convert plane(corornal, sagittal, axial) of MR image and save it to new file
+
+
 
 ### Meningioma Preprocessing
 Preprocess Brain MR Image nifti files
