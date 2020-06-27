@@ -6,7 +6,7 @@ convert dcm files to nifti
 
 
 ### file_manipulation
-manipulate file using pandsa and os module(move, copy, remove)
+manipulate file using pandas and os module(move, copy, remove)
 
 
 
