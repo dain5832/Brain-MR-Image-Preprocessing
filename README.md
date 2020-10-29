@@ -1,28 +1,31 @@
-# Brain_MR_Image_Processing
+# Brain_MR_Image_Preprocessing
+Preprocessing pipeline of Brain MR Image for medical research.
 
-## dcm_ti_nii.ipynb
-Convert dicom files to nifti
-
-
-## file_manipulation.ipynb
-Manipulate(move, copy, and remove) file using pandas and os library
+## Overview
+![alt text](/readme_img/1)Overview.PNG)
 
 
-## get_axial_slice_from_sagittal.ipynb
-Convert plane(corornal, sagittal, axial) of MR image and save it to new file
+## Tools
+#### ANTs(Advanced Normalization Tools) \
+- A tool for biomedical image analysis with a focus on registration, segmentation, etc. \
+- Used for Resampling, N4 Bias Correction, Co-registration 
 
+#### MONSTR(Multi-cONtrast brain STRipping method ) \
+- A software tool to generate brain masks (or skull-strip) from multi-contrast MR brain images, such as T1, T2, PD, or FLAIR. \
+- Compared to other tools that are validated on T1-based skull stripping methods, MONSTR involves multi-modal inputs(T1, T2, FLAIR를 지원)와 multi-model atlases.
+- Used for Skull Stripping
 
-## Meningioma_Preprocessing,ipynb
-Preprocess Brain MR Image nifti files
+### For installation of preprocessing tools and code usage, check out reference.md.
 
-### Step
+## Step
 1) Resampling
-2) N4 Bias Correction
-3) Co-Registration (to T1C)
-4) Skull-Stripping
+- Resize voxel to 1X1X1.
 
-### Tools
-1) ANTs
-- Resampling, N4 Bias Correction
-2) MONSTR
-- Co-Registration, Skull-Stripping
+2) N4 Bias Correction
+- Method for correcting low frequency intensity non-uniformity present in MRI image data known as a bias or gain field.
+
+3) Co-Registration (to T1C)
+- Brings one image(mostly T1C) to match another image, such that the same voxels refers roughly to the same structure in both brains.
+
+4) Skull-Stripping + Apply skull mask
+- Generate skull mask for each brain image, and strip.
