@@ -1,30 +1,27 @@
-# Brain_Raw
+# Brain_MR_Image_Processing
 
-### Dcm to Nii
-convert dcm files to nifti
-
-
-
-### file_manipulation
-manipulate file using pandas and os module(move, copy, remove)
+## dcm_ti_nii.ipynb
+Convert dicom files to nifti
 
 
+## file_manipulation.ipynb
+Manipulate(move, copy, and remove) file using pandas and os library
 
-### get_axial_slice_from_sagittal
+
+## get_axial_slice_from_sagittal.ipynb
 Convert plane(corornal, sagittal, axial) of MR image and save it to new file
 
 
-
-### Meningioma Preprocessing
+## Meningioma_Preprocessing,ipynb
 Preprocess Brain MR Image nifti files
 
-#### Step
+### Step
 1) Resampling
 2) N4 Bias Correction
 3) Co-Registration (to T1C)
 4) Skull-Stripping
 
-#### Tools
+### Tools
 1) ANTs
 - Resampling, N4 Bias Correction
 2) MONSTR
