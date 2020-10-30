@@ -2,7 +2,7 @@
 Preprocessing pipeline of Brain MR Image for medical research.
 
 ## Overview
-![alt text](/readme_img/1)Overview.PNG)
+![alt text](/readme_img/1_Overview.PNG)
 
 
 ## Tools
