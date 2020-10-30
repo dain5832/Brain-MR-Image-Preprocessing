@@ -11,7 +11,7 @@ Preprocessing pipeline of Brain MR Image for medical research. \
 - A tool for biomedical image analysis with a focus on registration, segmentation, etc. 
 - Used for Resampling, N4 Bias Correction, Co-registration. 
 
-### MONSTR(Multi-cONtrast brain STRipping method ) 
+### 2)MONSTR(Multi-cONtrast brain STRipping method ) 
 - A software tool to generate brain masks (or skull-strip) from multi-contrast MR brain images, such as T1, T2, PD, or FLAIR. 
 - Compared to other tools that are validated on T1-based skull stripping methods, MONSTR involves multi-modal inputs(supports T1, T2, FLAIR)와 multi-model atlases.
 - Used for Skull Stripping.
