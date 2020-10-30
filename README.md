@@ -1,5 +1,5 @@
 # Brain_MR_Image_Preprocessing
-Preprocessing pipeline of Brain MR Image for medical research. \
+Preprocessing pipeline of Brain MR Image for medical research. 
 
 **For installation of preprocessing tools and code usage, check out [reference.md](/reference.md).*
 
