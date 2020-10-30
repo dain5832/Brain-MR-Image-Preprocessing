@@ -1,4 +1,5 @@
-# Reference(기타참고자료)
+# Reference
+
 ## Installation
 ### ANTs (from source code)
 - Windows: https://github.com/ANTsX/ANTs/wiki/Compiling-ANTs-on-Windows-10
@@ -37,4 +38,4 @@ https://github.com/ANTsX/ANTs/wiki/Tips-for-improving-registration-results
 https://www.nitrc.org/docman/index.php?group_id=1063&selected_doc_group_id=4130#folder
 
 - Options for Code \
-[MONSTR.md](read_img/MONSTR.md)
+[MONSTR.md](read_img/MONSTR.txt)
