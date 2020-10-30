@@ -23,7 +23,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3071855/
 https://manpages.debian.org/testing/ants/N4BiasFieldCorrection.1.en.html
 
 ## 3) Co-Registeration(tool: ANTs) \
-- official documentation(링크 내 "See the pdf" 부분 클릭해 다운.) \
+- Official Documentation(링크 내 "See the pdf" 부분 클릭해 다운.) \
 http://stnava.github.io/ANTsDoc/
 
 - 코드에서 사용가능한 option 설명 \
