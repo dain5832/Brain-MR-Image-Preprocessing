@@ -38,4 +38,4 @@ https://github.com/ANTsX/ANTs/wiki/Tips-for-improving-registration-results
 https://www.nitrc.org/docman/index.php?group_id=1063&selected_doc_group_id=4130#folder
 
 - Options for Code \
-[MONSTR.md](read_img/MONSTR.txt)
+[MONSTR.txt](read_img/MONSTR.txt)
