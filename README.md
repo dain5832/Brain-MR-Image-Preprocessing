@@ -1,6 +1,6 @@
 # Brain_MR_Image_Preprocessing
 Preprocessing pipeline of Brain MR Image for medical research. \
-*For installation of preprocessing tools and code usage, check out reference.md.*
+**For installation of preprocessing tools and code usage, check out [reference.md](/reference.md).*
 
 ## Overview
 ![alt text](/readme_img/1_Overview.PNG)
@@ -21,7 +21,7 @@ Preprocessing pipeline of Brain MR Image for medical research. \
 ### 1) Resampling
 - Resize voxel to 1X1X1.
 - Output
-![alt_text]()
+![alt_text](/readme_img/3_Resampling.gif)
 
 ### 2) N4 Bias Correction
 - Method for correcting low frequency intensity non-uniformity present in MRI image data known as a bias or gain field.
