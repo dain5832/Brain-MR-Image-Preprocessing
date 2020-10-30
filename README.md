@@ -18,22 +18,22 @@ Preprocessing pipeline of Brain MR Image for medical research. \
 
 
 ## Step
-1) Resampling
+### 1) Resampling
 - Resize voxel to 1X1X1.
 - Output
 ![alt_text]()
 
-2) N4 Bias Correction
+### 2) N4 Bias Correction
 - Method for correcting low frequency intensity non-uniformity present in MRI image data known as a bias or gain field.
 - Output
 ![alt_text](/readme_img/4_Bias_correction.PNG)
 
-3) Co-Registration (to T1C)
+### 3) Co-Registration (to T1C)
 - Brings one image(mostly T1C) to match another image, such that the same voxels refers roughly to the same structure in both brains.
 - Output
 ![alt_text](/readme_img/5_Co-registration.PNG)
 
-4) Skull-Stripping + Apply skull mask
+### 4) Skull-Stripping + Apply skull mask
 - Generate skull mask for each brain image, and strip.
 - Output
-![alt_text](/readme_img/6_Skull_stripping.PNG)
+![alt_text](/readme_img/6_Skull-stripping.PNG)
