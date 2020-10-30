@@ -3,6 +3,22 @@ Preprocessing pipeline of Brain MR Image for medical research.
 
 **For installation of preprocessing tools and code usage, check out [reference.md](/reference.md).*
 
+## Update log
+**6/22** \
+Code that applies brain mask added.
+
+**6/23** \
+New variable T1C_label added\
+
+**7/6** \
+New variable mask_label added
+
+**7/7** \
+'try-except' was added when finding T1Cpath and T2path using glob since the files might not exist
+
+**8/4** \
+Clean outputdir(MONSTR) before skull-stripping added
+
 ## Overview
 ![alt text](/readme_img/1_Overview.PNG)
 
