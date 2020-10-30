@@ -1,5 +1,5 @@
 # Utils
-## dcm_ti_nii.ipynb
+## dcm_to_nii.ipynb
 Convert dicom files to nifti.
 
 
