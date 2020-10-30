@@ -1,0 +1,61 @@
+MONSTR.sh --t1 T1_IMAGE --t2 T2_IMAGE --fl FLAIR_IMAGE --pd PD_IMAGE --swi SWI_IMAGE 
+     --o OutputDir --atlasdir AtlasDir --natlas NumAtlas --rad SearchRadius --clean --reg --robust --ncpu NumCPU --fast
+
+Required arguments:
+
+T1_IMAGE      T1-w image with skull
+
+T2_IMAGE      T2-w image with skull, need not be registered to the T1. (optional)
+
+FL_IMAGE      FLAIR image with skull, need not be registered to the T1.  (optional)
+
+PD_IMAGE      PD-w image with skull, need not be registered to the T1.  (optional)
+
+SWI_IMAGE     SWI image with skull, need not be registered to the T1.  (optional)
+
+              This also works as a single channel stripping script, i.e. at least one of
+              the T1, T2, PD, FL, SWI are required.
+              ** If T1 is present, first channel must be T1.
+              ** If T1 is not mentioned, then the first mentioned channel is used
+              ** to register atlases, and then transformation is used for next channels.
+
+OutputDir     Output directory where the result mask will be written.
+
+AtlasDir      Atlas directory, where atlasX_T1.nii,atlasX_T2.nii, atlasX_PD.nii, atlas_SWI.nii, 
+              atlasX_FL.nii, atlasX_brainmask.nii files are kept. X = 1,2,3. 
+              Not all modalities are required, but they should correspond with the modalities 
+              of the subject images. The naming convention (i.e. atlasX_YY.nii, X=1,2,3 
+              YY=T1,T2,PD,FL,SWI) must be strictly followed.
+
+NumAtlas      Number of atlases to be used. Usually 4 works well. The atlas directory must 
+              contain these number of atlases. Default is 4.
+
+SearchRadius  Search radius for atlas patches, usually 5-9 works well. Default is 5.
+
+Optional Arguments:
+
+--clean       Cleaning temporary files. If this argument is mentioned, the temporary files 
+              will be deleted. If not mentioned, temporary files will be retained (default). 
+              Temporary files are kept in a separate directory inside OutputDir
+
+--reg         Use this flag if the T2/PD/FLAIR images are already registered to the 
+              T1. If not mentioned, then the T2/PD/FLAIR images WILL be registered to the T1. 
+              ** This option works if and only if T1 image is provided. Otherwise, all input 
+              ** modalities must be co-registered, and don't use this option.
+
+--robust      Atlases are registered to the subject using a more robust approach. a), necks 
+              from the subject and atlases are removed, b) the background noises are removed 
+              from the images, c) then the atlas is registered to the subjet. It takes more 
+              time, and usually not necessary. In future, this will be default.
+
+--ncpu        Number of processors to be used for parallel processing. Recommended is at least 8. 
+              If not mentioned, all availabe processors will be used.
+
+--fast        If --fast option is mentioned, images will be subsampled. The brainmask will be generated 
+              on a low resolution image, and upsampled to the original resolution. 
+              Default is off, i.e. brainmask will be created on original images.
+
+All files must be NIFTI(.nii). nii.gz files are not acceptable. 
+The output is the brainmask in the orientation of the T1 image.
+
+This script requires AFNI, FSL, ANTs to be installed and added to PATH environment variables.
